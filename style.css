@@ -1,0 +1,103 @@
+#fuckmylife1234{
+    color: #454545, #DEDEDE, #DBD3B5, #008080, #585248, #B8A36A, #DEBC4D #4B1623
+}
+html,body{
+    height: 100%
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #585248;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+
+}
+.toggle{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    z-index: 2
+}
+.toggle a{
+    text-decoration: none;
+    color: #B8A36A !important;
+    font-size: 24px;
+    cursor: pointer;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    z-index: 1;
+    transition: 0.5s;
+    background-color: #4B1623;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    padding: 10px;
+    display: inline-block;
+    font-family: verdana;
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #B8A36A;
+}
+ul li a:hover{
+    background: #B8A36A;
+    color:#262626;
+    text-decoration: none;
+}
+.menu.active{
+    left: 0;
+    overflow: auto;
+}
+
+.main_title{
+    width: 25vh;
+    height: auto;
+    margin-left: 10px;
+    margin-top: -7px;
+}
+#main{
+    margin-top: 100px;
+    text-align: left;
+    padding: 25px;
+}
+.text{
+    color: #DEBC4D;
+    font-size: medium;
+}
+
+footer{
+    position: relative;
+    margin-top: -45px; /* negative value of footer height */
+    height: 45px;
+    clear:both;
+    padding-top:10px;
+    background-color: #262626;
+    color: white;
+    font-size: medium;
+    text-align: center;
+  }
+
+@media screen and (max-width: 350px) {
+    footer{
+        font-size: small;
+    }
+}
